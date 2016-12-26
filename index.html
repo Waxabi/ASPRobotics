@@ -1,42 +1,100 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
 	<title>ASP Robotics</title>
-	<!-- FAVICON -->
-	<link rel="shortcut icon" href="images/favicon.ico">
 	
+	<!-- Favicon -->
+	<link rel="icon" href="images/favicon.ico">
+	
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<!-- Slider -->
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="style_desktop.css">
-	<link rel="stylesheet" type="text/css" href="style_tablet.css">
-	<link rel="stylesheet" type="text/css" href="style_mobile.css">
-	
-	<!-- BOOTSTRAP -->
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	
-	<!-- js -->
-	<script type="text/javascript" src="bootstrap.js"></script>
-	<script type="text/javascript" src="bootstrap.min.js"></script>
-	<script type="text/javascript" src="npm.js"></script>
-	<!--/-------------->
+	<link rel="stylesheet" type="text/css" href="css/style_desktop.css">
+	<link rel="stylesheet" type="text/css" href="css/style_tablet.css">
+	<link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div>
-		<ul>
-			<li>Productos</li>
-			<li>Servicios</li>
-			<li>Referencias</li>
-			<li>¿Quienes somos?</li>
-		</ul>
-	</div>
-	<!-- AQUI UN SLIDER CON EL LOGO -->
-	<div>
-		<img class="img-responsive" src="images/logo.png">
-	</div>
-	<!-- ----------------------------->
+	<!-- Static navbar -->
+	<nav class="navbar">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Inicio</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a href="#">Referencias</a></li>
+				<li><a href="#">¿Quiénes somos?</a></li>
+			</ul>
+		</div>
+	</nav>
 	
+	<div id="logotipo" class="container">
+		<img class="center-block img-responsive" src="images/logo.png" alt="Logo de la empresam, ASP Robotics">	
+	</div>
 	
+	<header id="myCarousel" class="carousel slide">
+        <!-- Indicadores -->
+        <!--
+		<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+		-->
+        <div class="carousel-inner">
+            <div class="item active">
+				<img class="fill img-responsive" src="images/slider/slider1.jpg">
+				<div class="carousel-caption">
+					<h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <img class="fill" src="images/slider/slider2.jpg">
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+	<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- JS Bootstrap -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
