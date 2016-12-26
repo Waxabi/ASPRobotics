@@ -1,0 +1,9 @@
+Fuente con la que se ha realizado el logo (letra)
+
+
+colores, el rgb de los colores 
+azul (0,146,220)
+blanco (255,255,255)
+negro (0, 0, 0)
+
+Saber el tamaño de las fotos que se pondrán en el slider, todsa tienen que tener el mismo tamaño.

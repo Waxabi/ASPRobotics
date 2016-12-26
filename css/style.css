@@ -17,9 +17,13 @@
 }
 /* ************************ */
 	
-
-
 #logotipo {
 	margin-top: -15px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+
+.productos {
+	margin-top: 30px;
+	border: 1px solid black;
 }
