@@ -16,14 +16,74 @@
     text-align: center;
 }
 /* ************************ */
-	
+
+/* ************************ */
+
+/* LOGO */
 #logotipo {
 	margin-top: -15px;
 	margin-bottom: 25px;
 }
+/* ************************ */
 
-
+/* MAIN */ 
 .productos {
 	margin-top: 30px;
 	border: 1px solid black;
 }
+/* ************************ */
+
+
+/* en desarrollo */
+#desarrollo {
+	text-align: center;
+	color: white;
+	background-color: rgb(0 , 146, 220);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	margin: 50px 0;
+}
+
+a {
+	color: rgb(0, 146, 220);
+}
+
+#logotipo {
+	margin-top: 25px;
+}
+
+#icono {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 25px;
+}
+
+#contacto {
+	margin-left: 15%;
+	margin-bottom: 5%;
+}
+
+#formulario {
+	
+}
+
+#formulario input:focus{
+	border-color: rgb(0, 146, 220);
+	box-shadow: 0px 0px 5px 0px rgba(0,146,220,0.8);
+}
+
+#formulario textarea:focus{
+	border-color: rgb(0, 146, 220);
+	box-shadow: 0px 0px 5px 0px rgb(0,146,220,0.8);
+}
+
+#enviar {
+	color: white;
+	background-color: rgb(0 , 146, 220);
+	box-shadow: 0px 0px 8px -2px rgb(0,0,0);
+	border-color: transparent;
+}
+
+#enviar:hover {
+	box-shadow: 0px 0px 3px 0px rgb(0,0,0);
+}
+/* ************************ */

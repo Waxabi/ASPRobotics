@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	
 	<title>ASP Robotics</title>
 	
 	<!-- Favicon -->
@@ -14,8 +13,11 @@
 	<!-- CSS Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	
-	<!-- Slider -->
+	<!-- CSS Slider -->
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	
+	<!-- CSS Animate -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css"
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style_desktop.css">
@@ -24,9 +26,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
-<body>
-	<!-- Static navbar -->
-	<nav class="navbar">
+<body id="inicio">
+	<!-- nav -->
+	<nav class="navbar hide">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only"></span>
@@ -37,87 +39,123 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Inicio</a></li>
-				<li><a href="#">Productos</a></li>
-				<li><a href="#">Servicios</a></li>
-				<li><a href="#">Referencias</a></li>
+				<li class="active"><a href="#inicio">Inicio</a></li>
+				<li><a href="#productos">Productos</a></li>
+				<li><a href="#referencias">Referencias</a></li>
+				<li><a href="#servicios">Servicios</a></li>
 				<li><a href="#">¿Quiénes somos?</a></li>
 			</ul>
 		</div>
 	</nav>
-	
+	<!-- /nav -->
+	<!-- logotipo -->
 	<div id="logotipo" class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<img class="center-block img-responsive" src="images/logo.png" alt="Logo de la empresa, ASP Robotics">
+				<img class="img-responsive animated zoomInDown" src="images/logo.png" alt="Logo de la empresa, ASP Robotics">
 			</div>
 		</div>
 	</div>
+	<!-- /logotipo -->
+
+	<!-- en desarrollo -->
+	
+	<div id="desarrollo" class="container-fluid">
+		<h1>Página web en desarrollo</h1>
+		<h3> Por favor contacta con nosostros</h3>
+	</div>
+	
+	<div class="container-fluid" id="icono">
+		<span class="glyphicon glyphicon-hand-down animated infinite slideInDown"></span>
+	</div>
+	<div class="container-fluid">
+		<div id="contacto" class="col-md-3">
+			<h4><span class="glyphicon glyphicon-earphone"></span> XXXXXXXXX</h4>
+			<h4><span class="glyphicon glyphicon-phone"></span> XXXXXXXXX</h4>
+			<h4><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:asprobotic@gmail.com" target="_top">asprobotic@gmail.com</a></h4>
+		</div>
+		<div id="formulario" class="col-md-6">
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="nombre" class="col-md-2 control-label">Nombre</label>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" autofocus>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="consulta" class="col-md-2 control-label">Consulta</label>
+					<div class="col-md-8">
+						<textarea id="consulta" class="form-control" rows="5" placeholder="Consulta con nosotros"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">
+						<button id="enviar" type="submit" class="btn btn-default">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+	<!-- /en desarrollo -->
+	
+	<!-- slider -->
+	<header id="slider" class="carousel slide animated bounceInUp hide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img class="fill" src="images/slider/slider1.jpg">
+				<div class="carousel-caption">
+					<h2>Caption 1</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img class="fill" src="images/slider/slider2.jpg">
+				<div class="carousel-caption">
+					<h2>Caption 2</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img class="fill" src="images/slider/slider3.jpg">
+				<div class="carousel-caption">
+					<h2>Caption 3</h2>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#slider" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="right carousel-control" href="#slider" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+	</header>
+	<!-- /slider -->
+	<!-- /main -->
+	<main class="container animated bounceInUp hide">
+		<!-- productos -->
+		<section id="productos" class="center-block text-center">
+			<div class="productos col-md-4">
+				<h3>Lorem Ipsum</h3>
+				<img class="img-responsive  center-block" src="images/productos/icono1.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta eget arcu id bibendum. Pellentesque fringilla porta nisl, ac efficitur libero sagittis eu. Donec facilisis sapien eget leo mollis sagittis et et lacus. Donec rhoncus vitae augue ut iaculis. In eu lorem at nisi malesuada dictum. Nam in ipsum massa. Suspendisse porta libero id interdum interdum.</p>
+			</div>
+			<div class="productos col-md-4">
+				<h3>Lorem Ipsum</h3>
+				<img class="img-responsive center-block" src="images/productos/icono2.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta eget arcu id bibendum. Pellentesque fringilla porta nisl, ac efficitur libero sagittis eu. Donec facilisis sapien eget leo mollis sagittis et et lacus. Donec rhoncus vitae augue ut iaculis. In eu lorem at nisi malesuada dictum. Nam in ipsum massa. Suspendisse porta libero id interdum interdum.</p>
+			</div>
+			<div class="productos col-md-4">
+				<h3>Lorem Ipsum</h3>
+				<img class="img-responsive center-block" src="images/productos/icono3.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta eget arcu id bibendum. Pellentesque fringilla porta nisl, ac efficitur libero sagittis eu. Donec facilisis sapien eget leo mollis sagittis et et lacus. Donec rhoncus vitae augue ut iaculis. In eu lorem at nisi malesuada dictum. Nam in ipsum massa. Suspendisse porta libero id interdum interdum.</p>
+			</div>
+		</section>
+		<!-- /productos -->
+		<!-- referencias -->
+		<section id="referencias">
+		</section>
+		<!-- /referencias -->
 	</main>
-	<header id="slider" class="carousel slide">
-			<!-- Indicadores -->
-			<!--
-			<ol class="carousel-indicators">
-				<li data-target="#slider" data-slide-to="0" class="active"></li>
-				<li data-target="#slider" data-slide-to="1"></li>
-				<li data-target="#slider" data-slide-to="2"></li>
-			</ol>
-			-->
-			<div class="carousel-inner">
-			<!-- <img class="item active" src="images/icon.png">-->
-				<div class="item active">
-					<img class="fill" src="images/slider/slider1.jpg">
-					<div class="carousel-caption">
-						<h2>Caption 1</h2>
-					</div>
-				</div>
-				<div class="item">
-					<!-- Set the second background image using inline CSS below. -->
-					<img class="fill" src="images/slider/slider2.jpg">
-					<div class="carousel-caption">
-						<h2>Caption 2</h2>
-					</div>
-				</div>
-				<div class="item">
-					<!-- Set the third background image using inline CSS below. -->
-					<img class="fill" src="images/slider/slider3.jpg">
-					<div class="carousel-caption">
-						<h2>Caption 3</h2>
-					</div>
-				</div>
-			</div>
-
-			<!-- Controls -->
-			<a class="left carousel-control" href="#slider" data-slide="prev">
-				<span class="icon-prev"></span>
-			</a>
-			<a class="right carousel-control" href="#slider" data-slide="next">
-				<span class="icon-next"></span>
-			</a>
-		</header>
-		<main class="container center-block text-center">
-				<div class="productos col-md-4">
-					<h3>PRODUCTO 1</h3>
-					<img src="nada">
-					<p>Hola esto es el producto 1</p>
-				</div>
-				<div class="productos col-md-4">
-					<h3>PRODUCTO 1</h3>
-					<img src="nada">
-					<p>Hola esto es el producto 1</p>
-				</div>
-				<div class="productos col-md-4">
-					<h3>PRODUCTO 1</h3>
-					<img src="nada">
-					<p>Hola esto es el producto 1</p>
-				</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4"></div>
-				<div class="col-md-4"></div>
-			</div>
-		</main>
-
+	<!-- /main -->
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- JS Bootstrap -->
